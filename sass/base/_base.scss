@@ -1,0 +1,42 @@
+// Global reset
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+// Define the root font size so we can relatively use 'rem' unit
+// for property values of all elements to achieve the responsiveness
+// of our web site in case user would change browser font size
+html {
+  font-size: 62.5%; //define 1rem = 10px or 62.5% of the root font size 16px
+  background-color: $color-primary;
+
+  // max-with: 1200px
+  @include respond(tab-land) {
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 56.25%;
+  }
+
+  // max-with: 900px
+  @include respond(tab-port) {
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  // max-with: 600px
+  @include respond(phone) {
+    font-size: 37.5%; //1 rem = 6px, 6/16 = 37.5%
+  }
+
+  // min-with: 1800px
+  @include respond(big-desktop) {
+    font-size: 75%; //1 rem = 12, 12/16 = 75%
+  }
+}
+
+// BOX SIZING
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+}

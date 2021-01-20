@@ -1,12 +1,11 @@
 import "./App.css";
+import "./containers/Blog/blog";
+import Blog from "./containers/Blog/blog";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Blogging App</h1>
-        <p>More to come...</p>
-      </header>
+      <Blog></Blog>
     </div>
   );
 }

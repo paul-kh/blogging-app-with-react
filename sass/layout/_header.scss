@@ -1,0 +1,37 @@
+.header {
+  background-color: $color-primary;
+  width: 100%;
+  height: 95vh;
+  position: relative;
+
+  &__logo-box {
+    //position settings
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    //dimension & color settings
+    width: 8rem;
+    height: 8rem;
+    background-color: $color-secondary;
+    border: 1px solid $color-secondary;
+    border-radius: 3px;
+  }
+
+  &__text-box {
+    //dimension settings
+    padding: 5rem;
+    width: 95%;
+
+    // Text Alignment
+    text-align: center;
+
+    //color settings
+    background-color: #fff;
+
+    //position settings
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

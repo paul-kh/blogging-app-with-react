@@ -1,0 +1,17 @@
+.FullPost {
+  width: 80%;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  background-color: $color-tertiary;
+  // border: 1px solid $color-grey;
+  box-shadow: 0 0.5rem 0.5rem rgba($color-grey, 0.6);
+  text-align: center;
+}
+
+.Edit {
+  & label {
+    display: block;
+    color: grey;
+  }
+}
